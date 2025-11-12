@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namba dhan</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+
+</head>
+<body>
+    <form action="">
+        
+       Name :<input  required minlength="3" maxlength="18" type="text" name="your Name" placeholder="Enter your first name" ><br>
+       Email : <input  type="email" name="email" placeholder="Enter your Email" > <br>
+        Pasdword : <input pattern="^(?=.[A-Z])(?=.[a-z])(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*\s).{8,20}$" type="password" name="pwd" placeholder="Enter Your Password"> <br>
+        DOB : <input type="date" name="DOB" value="DOB"> <br>
+        Salary : <input min="15000" max="3000000" type="number" name="salary" placeholder="Enter your salary"> <br>
+        Checking Time : <input type="time" name="timing" placeholder="on time"> <br>
+        <textarea name="address" placeholder="Enter your address" cols="30" rows="10"></textarea> <br>
+        Department : <select required name="Dept" >
+            <option value="None">---Select a Department+</option>
+            <option value="CS WITH AI">Computer science with AI</option>
+            <option value="CS">Computer Science</option>
+            <option value="CA">Chattered Accountant</option> 
+        </select> <br>
+
+        Gender <input type="radio" name="Gender" value="M" > Male 
+               <input type="radio" name="Gender" value="F"> Female <br>
+
+        Select Electives : <br>
+        <input type="checkbox" name="elective" value="Python">Python Programming <br>
+        <input type="checkbox" name="elective" value="java">Java programming <br>
+        <input type="checkbox" name="elective" value="django">Django Wed development <br>
+        <input type="checkbox" name="elective" value="AI">AI learning <br>
+        
+        <input type="submit" value="SAVE">
+        <input type="reset" value="Clear All">
+
+
+    </form>
+    
+</body>
+</html>

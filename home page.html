@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <style>
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: deeppink;
+    }
+
+    .text {
+      font-size: 50px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .bic {
+      font-size: 50px;
+      color: rgb(194, 58, 72);
+      text-align: center;
+      padding: 30px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: black;
+    }
+    .card-text{
+      text-align: center;
+      font-size: 25px;
+    }
+  </style>
+
+</head>
+
+<body style="background-image:url(harshiras.jpg) ; background-size: cover;">
+  <!--Row 1,logo,company,icons,welcome,logout-->
+  <div class="row">
+    <div class="col-1 " ;>
+      <img src="{% static 'app1/static/app1/images/Demon-Slayer-logo2' %}" style="width: 100%;">
+    </div>
+    <div class="col-4 mt-2">
+      <center> <span class="text" style="color: rgba(255, 22,69);">HAKUJI</span>
+        <span class="text" style="color: rgb( 255,22,69);"> KATANA STORE</span>
+      </center>
+    </div>
+    <div class="col-3">
+     <a href="https://www.instagram.com/demon_slayer_offcial/?hl=en"><i style="color: red;font-size: 50px;text-align: center;padding: 30px; " class="bi bi-instagram"></i>
+    </a>
+    </div>
+    <div class="col-3 mt-3" style="font-size: 30px;font-weight: bold; width: fit-content;padding-top: 20px;"> Welcome Harshiras</div>
+    <div class="col-1"><a href="" style="color: orange; font-size: 30;"> <i class="bic bi-box-arrow-right"></i> </a>
+    </div>
+  </div>
+  <!--Row 2,menu Bar,Search-->
+  <div class="row" style="background-color: rgb( 122,122 ,122) ;">
+    <div class="col-6">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="col-6">
+      <div class="input-group mb-3">
+        <input type="search" class="form-control" placeholder="search the web" aria-label="Recipient’s username"
+          aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2"> <i style="color: rgb(194,58,72);" class="bi bi-bluesky"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!--row 3,Scrolling text-->
+  <div class="row">
+    <div class="col-12">
+      <marquee behavior="" direction="">
+        <a href="https://smewindia.com/product-category/all-products/metal-handicrafts/decorative-swords-non-fire-arms/japanese-samurai-swords/?srsltid=AfmBOopPPqajhgm-vMJ0MBtQvgTgcjdc7JAhiuRiUaVfiKeW2X5M3uN1">
+          <h3>Welcome to HAKUJI'S KATANA STORE</h3>
+        </a>
+      </marquee>
+    </div>
+  </div>
+  <!--Row 4,sliding Images-->
+  <div class="row">
+    <div class="col-6 ">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button style="background-color: red;width: 30px; height:10px; border-radius: 13px; " type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button style="background-color: red;width: 30px; height:10px; border-radius: 13px; " type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button style="background-color: red;width: 30px; height:10px; border-radius: 13px; " type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button style="background-color: red;width: 30px; height:10px; border-radius: 13px; " type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="tanjiro.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="tanjiro2.gif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="hinokami.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--Row 5,Cards-->
+    <div class="card col-3">
+      <img src="tanjiro.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Mark Revealed</h3>
+        <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">In the Swordsman Village fight
+          against the Upper Moon 4 he unlocked his Mark</p>
+        <a href="" ><i class="bi bi-hand-thumbs-up"></i> </a>
+        <a href=""><i class="bi bi-chat-dots"></i></a>
+        <a href=""><i class="bi bi-share"></i></a>
+        </a>
+      </div>
+    </div>
+    <div class="card col-3">
+      <img src="tanjiro2.gif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Master Yorichi</h3>
+        <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">Master Yorichi is living inner soul
+          of Lord Kamado tanjiro</p>
+
+        <a href=""><i class="bi bi-hand-thumbs-up"></i></a>
+        <a href=""><i class="bi bi-chat-dots"></i></a>
+        <a href=""><i class="bi bi-share"></i></a>
+      </div>
+    </div>
+    <div class="card col-3">
+      <img src="demon1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Mugen Train </h3>
+        <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">This picter refers to the great fight
+          Mugen Train Arc</p>
+        <a href=""><i class="bi bi-hand-thumbs-up"></i></a>
+        <a href=""><i class="bi bi-chat-dots"></i></a>
+        <a href=""><i class="bi bi-share"></i></a>
+      </div>
+    </div>
+    <div class="card col-3" >
+  <img src=" demon2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Final Fight</h3>
+        <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">Harshiras are ready to destroy the
+          Demon King Kibutsugi Muzan</p>
+        <a href=""><i class="bi bi-hand-thumbs-up"></i></a>
+        <a href=""><i class="bi bi-chat-dots"></i></a>
+        <a href=""><i class="bi bi-share"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
